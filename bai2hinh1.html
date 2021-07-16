@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid;
+    }
+    th {
+        background-color:lightgray;
+    }
+    #conmeo,  #conmeo1, #conmeo2, #conmeo3 {
+        background-color: lightgray;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: left;
+    }
+</style>
+<body>
+    <h2>Bảng hóa đơn mẫu</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Invoice#123456789</th> 
+                <th>14 January 2025</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <p><b>Pay to:</b></p>
+                    <p>Acme Billing Co.</p>
+                    <p>123 Main St.</p>
+                    <p>Cityville, NA 12345</p>
+                </td>
+                <td colspan="2">
+                    <p><b>Customer:</b></p>
+                    <p>John Smith</p>
+                    <p>321 Willow Way</p>
+                    <p>Southeast Northwestershire, MA 54321</p>
+                </td>
+              
+            </tr>
+            <tr id="conmeo">
+                <td><b>Name/Description</b></td>
+                <td><b>Qty.</b></td>
+                <td><b>@</b></td>
+                <td><b>Cost</b></td>
+            </tr>
+            <tr>
+                <td>Paperclips</td>
+                <td>1000</td>
+                <td>0.01</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Staples(box)</td>
+                <td>100</td>
+                <td>1.00</td>
+                <td>100.00</td>
+            </tr>
+            <tr id="conmeo1">
+                <td colspan="3"><b>Subrotal</b></td>           
+                <td>110.00</td>
+            </tr>
+            <tr id="conmeo2">
+                <td colspan="2"><b>Tax</b></td>
+                <td>8%</td>
+                <td>8.80</td>
+            </tr>
+            <tr id="conmeo3"> 
+                <td colspan="3"><b>Grand Total</b></td>
+                <td>$118.80</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

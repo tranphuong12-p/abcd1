@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  table {
+      border: solid 1px;
+  }
+  .class1{
+     text-align: right;
+  }
+</style>
+<body>
+<form>
+    <table>
+        <tbody>
+            <tr>
+                <td class="class1"><b>name:</b></td>
+                <td>
+                   *<input name='name'>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">Enter your first and last name.</td>
+            </tr>
+            <tr>
+                <td  class="class1"><b>Location & Program:</b></td>
+                <td>
+                    *<select name='select'>
+                        <option value="1">select...</option>
+                        <option value="2">select1...</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td></td>
+                <td colspan="2">If you need to, you can change this selection during the admission process.</td>
+            </tr>
+            <tr>
+                <td  class="class1"><b>Email:</b></td>
+                <td>
+                    *<input type="text" name='text'>
+                </td>  
+            </tr>
+            <tr>
+                <td  class="class1"><b>Phone:</b></td>
+                <td>
+                    *<input type="number" name='number'>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">Please enter your primary phone number using 555-555-5555 format.</td>
+            </tr>
+            <tr>
+               <td  class="class1"><b>Contect Preferance:</b></td>
+               <td>
+                  <input type="radio" name='Contac Preference' value="phone"> Phone
+                  <input type="radio" name='Contac Preference' value="email"> Email
+               </td> 
+            </tr>
+            <tr>
+                <td  class="class1"><b>Mailing Address:</b></td>
+                <td>
+                    *<input name='Adress'>
+                </td>
+            </tr>
+            <tr>
+                <td  class="class1"><b>City:</b></td>
+                <td>
+                    *<input name='city'>
+                </td>
+            </tr>
+            <tr>
+                <td  class="class1"><b>State, Province or Territory:</b></td>
+                <td>
+                    *<select name='select'>
+                        <option value="select">select...</option>
+                    </select>   
+                </td>
+            </tr>
+            <tr>
+                <td  class="class1"><b>Zip/Postal Code:</b></td>
+                <td>
+                    *<input name='zip code'>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <button>Request Information</button>
+</form>
+</body>
+</html>

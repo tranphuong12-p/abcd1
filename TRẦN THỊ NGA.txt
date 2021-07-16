@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   
+        <title>SCC</title>
+        
+     
+       <style>
+           .a{
+               color:darksalmon;
+
+           }
+           table#t01{
+            width: 100%;
+            background-color:#f1f1c1;
+           }
+           table#t02{
+            width: 30%;
+            background-color:#f1f1c1; 
+            border: 1px solid black;
+            text-align:right;
+           }
+           table#t03{
+            width: 7%;
+            background-color:#f1f1c1; 
+            border: 1px solid black;
+            text-align:right;
+           }
+           table#t04{
+            width: 100%;
+            border: 1px solid rgb(126, 116, 116);
+           
+           }
+           table#t05{
+               width: 100%;
+               background-color: #f1f1c1;
+               text-align:center;
+           }
+           
+           body {
+               font-family:  "Times New Roman";
+               font-size: 7;  
+               color:brown;  
+
+           }
+         
+       </style>
+   </head>
+    <body>
+        
+       <div class ="a"> 
+          <div style="text-align:center;">
+            <table id="t01">
+                <td>>>Shining - Confident - Charming<<</td>
+            </table>
+             <h1 style="font-family:Futura"><i><strong>SCC Cosmictics</strong></i></h1>
+             <table id="t03">
+                <td><button>Register</button></td>
+                <td><button>login</button></td>
+            </table>
+             <table id="t02">
+                <td><button>tìm kiếm</button></td>   
+            </table></br>
+            <table id="t04">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Hàng mới về</th>
+                    <th>Sản phẩm bán chạy</th>
+                    <th>Thương hiệu</th>
+                </tr>
+            </table></br>
+            <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-elegant-air-country-banner-poster-background-image_185990.jpg" alt="ảnh" width="1300" height="500px">
+            <h2 style="font-family: Garamond font-size:35" ><i>Sức mạnh của sắc đẹp mãnh liệt,</br> tràn đầy năng lượng và không kém phần tinh tế</i></h2>
+          </div>
+          <div style="text-align: left:">
+            <img src="https://kyo.vn/wp-content/uploads/2020/10/Son-Black-Rouge-Ver-7-A33-.jpg" alt="bìa" width="" height="">
+            <img src="https://tapchilamdep.com/wp-content/uploads/2020/10/Bang-mau-son-Black-Rouge-Ver-7.jpg" alt="son"  width="500" height="400px">
+            <marquee style="color:	#CC99CC"><b>
+                 SCC1: Sunset Crown - Đỏ cam 
+                 SCC2:  Sensual Queen of Burnt - Cam gạch 
+                 SCC3: Sunny Side Up - Đỏ dâu
+                 SCC4: Dust Pumpkin - Cam pha nâu
+                 SCC5: Unrivaled Chili King - Đỏ nâu đất </b>                
+            </marquee>
+          </div>
+          <div>
+            <table id="t05">
+              <td>Công ty SCC dùng shared hosting</br>
+                   Hotline, zalo: 09669961612 (Mrs: Trường) </br>
+                   Văn phòng: 80/86 Dương Quảng Hàm, P5, Quận Gò Vấp, TP.HCM</br>
+                   Chi nhánh miền bắc: 123 Phố Yên Phúc, Đường Nguyễn Khuyến, Đô Thị Văn Quán, Q.Hà Đông, Hà Nội
+                </td>
+            </table>
+          </div>
+       </div>
+    </body>
+</html>

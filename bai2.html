@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* table boder- duongw vien*/
+    table, th, td{
+        border: 1px solid;
+    }
+    table{
+         border-collapse: collapse; /* 2 duong gan nhau den duong vien len nhau*/
+        /*border-spacing: 10px; /* khong muon de len nhau nuwa vaf tawng khoang cach cho cell*/
+    }
+    th, td{
+        padding: 10px ; /* tinh tu border(duong vien) toi doi tuong la 10px*/
+     
+    }
+</style>
+<body>
+    <!--
+        stt    ten     ngay sinh//thead: phần đầu, tên hàng đầu của table 
+              họ    tên// thead
+        1      phuong    1998//tr nằm trong thead : 1 hàng
+        2      phuong2  2000
+    th-> table head '(mỗi cell trong table')( stt, ten , ....)  -> in đậm tối ưu cell 
+    -->
+    <!-- 
+        tbody: phần dl của bảng  (1 phuong  1998)
+        tr-> 1 hàng
+        td: -> mỗi cell trong tbody -> tr
+        không in đậm -> dùng hiển thị cho dữ liệu 
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" >stt</th> <!--gop hang dieu kien o duoi k co cai cell nao -->
+                <th colspan="2">ten</th> <!-- gop 2 cot khac nhau-->
+                <th rowspan="2">ngay sinh</th>
+            </tr>
+            <tr>
+                <th>ho</th>
+                <th>ten</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>tran</td>
+                    <td>phuong</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>tran</td>
+                    <td>phuong</td>
+                    <td>1998</td>
+                </tr>
+        </tbody>
+    </table>
+   
+
+</body>
+</html>

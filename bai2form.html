@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        http://server_name.com/api/members
+        endpoint: /members
+          trên server sẽ cung cấp về nh phương thức cho endpoint 
+          - vd: GET
+               - POST
+               - pUT
+               - PATCH
+               - DETELE
+        form: dung de day du lieu len server:
+        form: action, method(phuongư thức),...
+            - action: là 1 cái đường link -> bấm submit -> thì gởi dữ liệu lên link này
+            - methob: phuong thức truyền dữ liệu:
+                - GET: lấy dữ liệu
+                - POSTthêm dữ liệu mới
+                - PUT: chỉnh sữa dl
+                - PATCH: chỉnh sửa dl
+                - DETELE: xóa dl
+                CRUD: management chuẩn
+                -.... 
+        trong form: chuwa cac thẻ: 
+        // quan trọng nhất trong form
+            - input(cái để nhập vào)
+            - button
+            - select
+            - textarea
+
+            ngoài ra 
+            - phattrientuHTML5 TRỞ LÊN.....wrapper: div, span,....., i, a, p, b, br....
+             tuong tư như 1 thẻ wrapper, nhựng đảm nhẩn nhiệm vụ: lấy tâts cả dl từ các thẻ input nằm trong form và đẩy lên server
+    -->
+    <!--
+        action: '/'
+        methods: GET
+    -->
+        <form>
+             <b>usernam:</b>
+            <br/>
+            <input name='username'>
+            <br/>
+            <b>password:</b>
+            <br/>
+            <input name='password'>
+            <br/> 
+            <!-- type: text- nhập cả  số chữ ký tự dăc biệt
+                 placeholder: định dạng chữ trong ô input-->
+            <b>text:</b>
+            <br/>
+            <input type="text" name='text' placeholder="nhap ở đây">
+            <input type="number" name='text'placeholder="nhap ở đây">
+            <br/>
+            
+            <!--type: checkbox-->
+            <input type="checkbox" name='checkbox'>
+            <input type="checkbox" name='checkbox'>
+            <br/>
+
+            <!-- type: radio- chỉ chọn 1-->
+            nam:<input type="radio" name='gioitinh' value="nam">
+            nu:<input type="radio" name='giotinh' value="nu">
+            khac:<input type="radio" name='gioitinh' value="khac">
+            <br/>
+
+            <!--type: password- nhap thanh *****-->
+            <input type="password" name='password1' placeholder="nhap ở đây">
+            <br/>
+
+            <!-- type: file- chọn file tair lên-->
+            <input type="file" name='file'>
+            <br/>
+            <!--textarea: dùng để đánh đoạn văn có thể thu nhỏ or to 
+                row: chỉnh kích thước-->
+            <textarea row="4" placeholder="nhap ở đây"></textarea>
+              <br/>
+            <select name="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+              <br/>
+            <!-- button nhận  mặc định là sự kiện submit của form-- không có 2 nụt này thì k thể gởi lên server đc-->
+            <button>submit:</button>
+            <!-- <input type="submit" value="submit"-->
+            <button type="button">submit</button> <!--nhập vào input sẽ không hiện lên đường link trên local vd: 127.0.0.1:55/newforder/html?usernam=phuong&pasword=12345 vì ở đây type đã chuyen qa the button nữa k còn là thẻ submit-->
+            <button type="reset">reset</button> <!-- nhập vào input thì sẽ xóa ở trên cái local -->
+            
+        </form>
+</body>
+</html>
