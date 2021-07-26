@@ -1,21 +1,58 @@
 body{
     background-color:oldlace;
 }
-th.cl2, h3{
-    color:mediumorchid;
-    text-align: left;
+.relative{
+    position: relative;
+    height: 310px;
 }
-.clas1{
-  
-    width: 300px;
+.absolute{
+    position: absolute;
+    left: 250px;
+    top: 10px;
 }
-.clas2{
-
-    width: 930px;
-    text-align: center;
+.inline-block{
+    display:inline-block;
 }
-.clas3{
-  
-    width: 250px;
-    
+.relative1{
+    position:relative;
+    height:160px;
+}
+.absolute1{
+    position: absolute;
+    top: 0;
+    left:55px ;
+}
+.absolute2{
+    position: absolute;
+    right: 150px;
+    bottom: -327px;
+}
+.cla1{
+    color:darkcyan;
+    margin:3px 54px; /* 3px: top, bottom 65px:left, right*/
+}
+.cla2{
+    color:darkcyan;
+    margin: 3px 0px;/* tạo khoảng trống bên ngoài border hay nôi dung*/
+}
+.cla3{
+    color:darkcyan;
+    margin: 3px 45px;
+}
+.cla4 {
+    color:darkcyan;
+    margin: 3px 6px;
+}
+.cl1 {
+    color:darkcyan;
+    margin: 3px 220px;
+}
+.cl2{
+    color:darkcyan;
+    margin: 3px 60px;
+}
+.fixed{
+   position: fixed;
+   right: 50px;
+   bottom: 10px;
 }
