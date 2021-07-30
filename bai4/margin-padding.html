@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .margin-test{
+        height: 100px;
+        border: 2px solid cadetblue;
+        background-color: chocolate;
+        margin-top: 10px ;
+        margin-left: 20px;
+        margin-right: 30px;
+         margin-bottom: 40px;
+    }
+    .padding-test{
+        height: 100px;
+        border: 2px solid chocolate;
+        background-color:cadetblue;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    * {
+        box-sizing: border-box; /* no se xet phan border + padding + nd=chieu rong(width) theo ct thi se design- width nd minh se k qt phai di tim width noidung*/
+    }
+</style>
+<body>
+    <!-- 
+        mot vai fon vi do luong trong css: px, %, rem, em, vh(theo man hinh tu tren->xuong), vw( tinh theo manhinh cua minh trai->phai)
+    -->
+    <!-- apply voi 1 vai the nhat dinh
+         nhung the kh set duoc 2 thuoc tinh nay: span, b, i,..
+    -->
+    <!--
+        margin: 4 thuoc tinh cow ban
+           top
+           left
+           right
+           bottom
+        margin: la phan tu tinh tu border (khong bao gom border) ra ngoaif
+        - 2 cach dinh nghia:
+            - tuong minh
+               margin-top: ;
+               margin-left: ;
+               margin-right: ;
+               margin-bottom: ;
+            - ngan gon:
+               margin: [top, bottom] [left, right] x y;
+               margin: top [left right] bottom: x y x;
+               margin: top left right bottom: a b c d;
+    -->
+    <div class="margin-test"></div>
+    <!--
+        margin: 4 thuoc tinh cow ban
+           top
+           left
+           right
+           bottom
+        padding: la phan tinh tu border (khong bao gom border) den noi dung cua the (khong bao gom noi dung cua the)
+    -->
+    <div class="padding-test"></div>
+</body>
+</html>

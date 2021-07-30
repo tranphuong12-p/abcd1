@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .overflow{
+        width: 500px;
+        overflow-x: scroll;
+    }
+    .element1{
+        float: left;
+    }
+    .element2{
+        float: right;
+    }
+    a:link{
+        color:blueviolet;
+    }
+    a:hover {
+        color:chartreuse;
+    }
+    a:active{
+        color:cyan;
+    }
+    a:visited{
+        color: coral;
+    }
+    a::before{
+        content: "phia truoc";
+        color: darkblue;
+    }
+    a::after{
+        content: "phia sau";
+        color: darkred;
+    }
+</style>
+<body>
+    <!-- 
+        overflow: 1 cai layout ma noi dung bij trang ea khoi cai layout do
+        4thuoc tinh
+            - visible: mawc dinh -> giu nguyen
+            - hidden: an phan dl cua the con tran ra the cha
+            - scroll: them thanh cuonj cho phan dl bi tran ra
+                + scroll-x: overflow-x: them thanh cuon ngag
+                + scroll-y: overflow-y: them thanh cuon doc
+            - auto: khi m phan du lieu ben trong the cha bij tron thi tu dong ap dung scroll (overflow-x, overflow-y)
+         
+    -->
+    <!--<div class="overflow">
+        <img src="https://deviet.vn/wp-content/uploads/2019/04/vuong-quoc-anh.jpg" alt="h1">
+    </div> -->
+    <!--
+        float: dua the co thuoc tinh  nay dden
+         2 thuoc tinh:
+           - left: ben trai cuoi cung cua the
+           - right: ben phai cuoi cung cua the
+    -->
+    <!--<div class="float">
+        <div class="element1">element1</div>
+        <div class="element2">element2</div>
+    </div>-->
+    <!--
+        trang thai dac biet cua 1 element: duoc phan biet boi dau :
+           - link: khi fref
+           - action: khi click vao
+           - hover: khi di chuyen vao
+           - visited: da dc truy cap
+    -->
+    <a href="/bai2form.html">form clik here</a>
+    <!--
+        phan tu gia cua 1 element:
+           - before:
+           - after:
+    -->
+</body>
+</html>

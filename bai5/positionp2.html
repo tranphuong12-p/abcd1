@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        position: relative;
+    }
+    .box{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+    }
+    .green{
+        background-color: green;
+        top: 110px;
+        left: 110px;
+    }
+    .blue {
+        background-color: blue;
+        top: 250px;
+        left: 250px;
+        z-index: 2;
+    }
+    .red{
+        background-color: red;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+</style>
+<body>
+    <!--
+        z-index: mac dinh la 1
+          - ap dung cho cac the có thuoc tinh position: relative, fixel, absolute
+          - z-index nao co gia tri cao thi nam tre, thap thi nam duoi
+          - 2 the co cung z-index: the nao viet sau thif the do nam tren
+    -->
+    <div class="parent">
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box green"></div>
+    </div>
+</body>
+</html>

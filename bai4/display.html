@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .display {
+        height: 100px;
+        background-color: crimson;
+        display:inline-block;
+        width: 100px;
+        margin-left: 10px;
+    }
+    .relative-class{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        position: relative; /* dong vai tro cha cua absolute*/
+    }
+    .absolute-class{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        position: absolute;
+        /*top: 100px;  default value: mac dinh top:0px hay top:100px thi se tinh theo top tu dpo tuong toi top cua realtive */
+        /* left: 100px;    default value: mac dinh left:0px hay left:100px tuong tu top*/
+         right: 100px;
+        bottom: 0px; 
+    }
+    .fixed-class{
+        position: fixed;
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+<body>
+    <!--
+        css display: 4 thuoc tinh
+          none: se khong hien thi ra man hinh
+          block: moi minh no nam tren 1 hang kh cho bat cu 1 box nao cung 1 hang -> co the set padding, margin 
+          inline: nhieu the nam tren 1 hang duoc, khi het khoan trong thi tu dong xuong hang -> khong the xet padding vaf margin, height, width
+          inline-block: nhieu the nam tren 1 hang duoc, khi het khoan trong thi tu dong xuong hang -> co the xet padding vaf margin, height, width
+    -->
+    <div class="display">ada</div>
+    <div class="display">adada1</div> -->
+    <!--
+        position: 4 thuoc tinh cow ban
+           + static: ->day la thuoc tinh mac dinh cua the: khong the xet top, left, right, bottom
+           + ralative: tuong tuw nhu static -> co the xet top, left, right, bottom
+           + absolute: co the nhay bat cu dau theo cac thuoc tinh di kem(bat buoc phai co: [top left] [rigth, bottom] [top, right] [left, botom])
+               -> no duoc xet vi tri theo the cha gan nhat co position: relative 
+           + fixed: tuong tu nhu absolute -> no duoc set vi tri theo man hinh hien thi (man hinh may(vw, vh))
+
+
+
+           top 
+           left
+           right
+           bottom
+    -->
+        <div class="relative-class"> 
+        <div>
+            <div class="absolute-class"></div><!-- khong phai nam trong the relative ma la di ra de tim va xet theo the cha co relative gan nhat*/--> 
+        </div>
+    </div>
+    
+    <div class="fixed-class"></div>
+</body>
+</html>
