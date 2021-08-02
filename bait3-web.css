@@ -1,58 +1,88 @@
+@font-face {
+    font-family: 'font-1';
+    src: url(./NotoSerif-Bold.ttf);
+}
+@font-face {
+    font-family: 'font-2';
+    src: url(./Quicksand-VariableFont_wght.ttf);
+}
 body{
     background-color:oldlace;
 }
-.relative{
-    position: relative;
-    height: 310px;
+.menu{
+    position:relative;
+    height: 50px;
+    background-color:lightgray;
+    font-family: 'font-1';
 }
-.absolute{
-    position: absolute;
-    left: 250px;
+.menu-item-wrapper{
+    /* position: absolute; */
+    display: inline-block;
+    padding-bottom: 10px;
+    height: 40px;
+    left: 200px;
     top: 10px;
 }
-.inline-block{
-    display:inline-block;
+
+.main{
+    height: 1300px;
+    margin-left: 95px;
+    margin-right: 100px;
+    font-family: 'font-2';
 }
-.relative1{
-    position:relative;
-    height:160px;
+.image {
+    overflow: hidden;
 }
-.absolute1{
-    position: absolute;
-    top: 0;
-    left:55px ;
+.image img{
+    transition: 2s;
+    transition-delay: 1s;
 }
-.absolute2{
-    position: absolute;
-    right: 150px;
-    bottom: -327px;
+.image img:hover{
+    transform: scale(1.1);
 }
-.cla1{
+.music-video-wrapper{
+    float: left;
+}
+.musicBXH-wrapper{
+   float: left;
+   padding-left: 20px;
+}
+.BXH{
+    padding-left: 140px;
+}
+.namemusic1{
     color:darkcyan;
-    margin:3px 54px; /* 3px: top, bottom 65px:left, right*/
+    padding-left: 2px;
+   /* margin:3px 5px; /* 3px: top, bottom 65px:left, right*/
 }
-.cla2{
+.namemusic2{
     color:darkcyan;
-    margin: 3px 0px;/* tạo khoảng trống bên ngoài border hay nôi dung*/
+    padding-left: 30px;
+    /*margin: 3px 38px;/* tạo khoảng trống bên ngoài border hay nôi dung*/
 }
-.cla3{
+.namemusic3{
     color:darkcyan;
-    margin: 3px 45px;
+    padding-left: 27px;
 }
-.cla4 {
+.namemusic4 {
     color:darkcyan;
-    margin: 3px 6px;
+    padding-left: 27px;
 }
-.cl1 {
-    color:darkcyan;
-    margin: 3px 220px;
+.videoname1 {
+    padding-left: 5px;
 }
-.cl2{
-    color:darkcyan;
-    margin: 3px 60px;
+.videoname2{
+padding-left: 280px;
 }
-.fixed{
-   position: fixed;
-   right: 50px;
-   bottom: 10px;
+.videoname3{
+    padding-left: 280px;
+}
+.forter-connect{
+    text-align: center;
+    background-color:rgb(225, 233, 235);
+    font-family: 'font-1';
+}
+.forter{
+    background-color: lightblue;
+    text-align: center;
 }

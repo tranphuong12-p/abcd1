@@ -10,72 +10,106 @@
 
 </style>
 <body>
-    <div class="relative">
-        <img src="https://cdna.artstation.com/p/assets/images/images/025/524/306/large/flat-bunnyy-zoro.jpg?1586081431"
-        alt="zoro" width="100px" height="40px">
-        <div  class="absolute">
-            <a href="https://www.nhaccuatui.com/">Trang chủ</a>
-            <a style="margin-left: 160px;" href="https://www.nhaccuatui.com/bai-hat/bai-hat-moi.html">Bài Hát</a>
-            <a style="margin-left: 160px;" href="https://www.nhaccuatui.com/bai-hat/top-20.nhac-viet.html">BXH</a>
-            <a style="margin-left: 160px;" href="https://www.nhaccuatui.com/video.html">Video</a>
-            <a style="margin-left: 430px;" href="https://www.nhaccuatui.com/video.html">Đăng Nhập|</a>
-            <a href="https://www.nhaccuatui.com/video.html">Đăng Ký</a>
+    <!--
+        Dat ten class:
+          theo huong chuc nang
+          theo huong giao dien -> dda so thi theo huong giao dien
+    -->
+        <div class="menu menu1">
+            <img src="https://cdna.artstation.com/p/assets/images/images/025/524/306/large/flat-bunnyy-zoro.jpg?1586081431"
+            alt="zoro" width="100px" height="40px">
+            <div  class="menu-item-wrapper">
+                <a href="https://www.nhaccuatui.com/">Trang chủ</a>
+                <a style="padding-left: 120px;" href="https://www.nhaccuatui.com/bai-hat/bai-hat-moi.html">Bài Hát</a>
+                <a style="padding-left: 120px;" href="https://www.nhaccuatui.com/bai-hat/top-20.nhac-viet.html">BXH</a>
+                <a style="padding-left: 120px;" href="https://www.nhaccuatui.com/video.html">Video</a>
+                <a style="padding-left: 120px;">
+                    <!-- <img src="https://e7.pngegg.com/pngimages/639/878/png-clipart-computer-icons-search-box-button-button-vector-icons-rim-thumbnail.png" alt="timkiem" height="10px" width="10px"> -->
+                    <input name="tìm kiếm" placeholder="Tìm kiếm"></a>
+                <a style="padding-left: 230px;" href="https://www.nhaccuatui.com/video.html">Đăng Nhập|</a>
+                <a href="https://www.nhaccuatui.com/video.html">Đăng Ký</a>
+            </div>  
         </div>
-        <p style="text-align: center;"><img src="206937855_328436468751187_5347484669870349382_n.jpg"
-            alt="h1" width="1400px" height="250px"></p> <br/>
+        <div class="main">
+            <div style="width: 100%;" class="image"><img src="./206937855_328436468751187_5347484669870349382_n.jpg"
+                alt="h1" width="1300px" height="250px"></div>
+            <div  class="music-video-wrapper">
+                <section> 
+                   <div>
+                       <h2 style="color:mediumorchid ;"> Hôm nay nghe gì??? </h2>
+                       <a  href="https://www.nhaccuatui.com/"><img src="198408506_1206059986527511_2860847278129705846_n.jpg" alt="h2" width="200px" height="150px"></a>
+                       <a style="padding-left:5px;"  href="https://www.nhaccuatui.com/"><img src="215360362_506410933922923_2311701426728220261_n.jpg" alt="h2" width="200px" height="150px"></a>
+                       <a style="padding-left: 5px;" href="https://www.nhaccuatui.com/"><img src="219093549_534770394242955_859803685057931418_n.png" alt="h2" width="200px" height="150px"></a>
+                       <a style="padding-left: 5px;" href="https://www.nhaccuatui.com/"><img src="206937855_328436468751187_5347484669870349382_n.jpg" alt="h2" width="200px" height="150px"></a>  
+                        <div>
+                           <a class="namemusic1">Bài hát yêu thích tháng1</a>
+                           <a class="namemusic2">Bài hát yêu thích tháng2</a>
+                           <a class="namemusic3">Bài hát yêu thích tháng3</a>
+                           <a class="namemusic4">Bài hát yêu thích tháng4</a>
+                       </div> 
+                    </div>  
+                </section>
+                <section>
+                    <div>
+                       <h2 style="color: mediumorchid;">Video</h2>
+                       <video controls>
+                           <source src="./movie.mp4">
+                        </video>
+                        <video controls style="padding-left: 5px;">
+                           <source src="./movie.mp4">
+                        </video>
+                        <video controls  style="padding-left: 5px;">
+                           <source src="./movie.mp4">
+                        </video>
+                         <div style="color:darkcyan;">
+                           <a class="videoname1">Video1</a>
+                           <a class="videoname2">Video2</a>
+                           <a class="videoname3">Video3</a>
+                        </div>
+                        <video controls>
+                           <source src="./movie.mp4">
+                        </video>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_BGHCmpxvLg" style="padding-top: 20px;"
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div style="color:darkcyan;">
+                           <a class="videoname1">Video4</a>
+                           <a class="videoname2">Do anh doan duoc</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                <section class="musicBXH-wrapper">
+                    <div>
+                        <h2 style="color:mediumorchid ;" class="BXH">BXH</h2>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio> <br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
+                        <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio>     
+                    </div><br/>
+                </section>
     </div>
-    <div style="color:mediumorchid ;" >
-        <h2 class="inline-block">Hôm nay nghe gì??</h2>
-        <h2 class="inline-block" style="margin-left: 970px;">BXH</h2>
-    </div>
-    <div class="relative1">
-        <div class="absolute1">
-            <nav  class="inline2">
-                <a href="https://www.nhaccuatui.com/"><img src="198408506_1206059986527511_2860847278129705846_n.jpg" alt="h2" width="200px" height="150px"></a>
-                <a style="margin-left: 5px;" href="https://www.nhaccuatui.com/"><img src="215360362_506410933922923_2311701426728220261_n.jpg" alt="h2" width="200px" height="150px"></a>
-                <a style="margin-left: 5px;" href="https://www.nhaccuatui.com/"><img src="219093549_534770394242955_859803685057931418_n.png" alt="h2" width="200px" height="150px"></a>
-                <a style="margin-left: 5px;" href="https://www.nhaccuatui.com/"><img src="206937855_328436468751187_5347484669870349382_n.jpg" alt="h2" width="200px" height="150px"></a>   
-            </nav>
+    <footer>
+        <div class="forter-connect">
+            <p><b>Kết nối với chúng tôi</b></p>
+            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="fb" height="40px" width="40px">
+            <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png" alt="zalo" height="40px" width="40px">
+            <img src="http://rubee.com.vn/admin/webroot/upload/image//images/bai-viet/logo-instagram-5.jpg" alt="ig" height="40px" width="40px">
         </div>
-        <div class="absolute2">
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio> <br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio><br/>
-            <audio src="./ConCoBeBe-VA-5941042.mp3" controls></audio>     
+        <div class="forter">
+            <img src="https://thumuaipadcu.com/wp-content/uploads/2017/12/dia-chi.png" alt="diachia" height="30px" width="30px">
+            <a>Liên Chiểu Đà Nẵng</a>
+            <a style="padding-left: 50px;"><img src="https://mpng.subpng.com/20180806/atp/kisspng-email-mobile-app-iphone-computer-icons-free-png-mail-icon-237271-download-png-mail-icon-5b68aa99b8f1f9.4213241115335860737576.jpg" alt="thư" height="30px" width="30px"></a>
+            <a>12@gmail</a>
+            <a style="padding-left: 50px;"><img src="https://cdn.pixabay.com/photo/2016/06/06/16/39/phone-1439839_960_720.png" alt="goi" height="30px" width="30px"></a> 
+            <a>018364663875</a>
         </div>
-    </div>
-    <div>
-        <a class="cla1">Bài hát yêu thích tháng1</a>
-        <a class="cla2">Bài hát yêu thích tháng2</a>
-        <a class="cla3">Bài hát yêu thích tháng3</a>
-        <a class="cla4">Bài hát yêu thích tháng4</a>
-    </div>
-    <div>
-        <h2 style="color: mediumorchid;">Video</h2>
-        <video controls style="margin-left: 50px;">
-            <source src="./movie.mp4">
-        </video>
-        <video controls style="margin-left: 5px;" >
-            <source src="./movie.mp4">
-        </video>
-        <video controls style="margin-left: 5px;">
-            <source src="./movie.mp4">
-        </video><br/>
-        <div>
-            <a class="cla1">Video1</a>
-            <a class="cl1">Video2</a>
-            <a class="cl2">Video3</a>
-        </div>
-    </div>
-    <div class="fixed">
-     <img src="https://www.pinclipart.com/picdir/middle/373-3739729_caret-png-clipart-swipe-up-icon-png-transparent.png" alt="muiten"  height="30px" ;
-            width="40px";>
-    </div>
-    
+    </footer>
 </body>
 </html>
