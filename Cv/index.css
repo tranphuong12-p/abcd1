@@ -1,0 +1,127 @@
+ @font-face {
+     font-family: 'font-1';
+     src: url(./font/Montserrat-Light.ttf);
+ }
+ 
+ .heading{
+     background-image: url(./home2-event-box-1.jpg);
+     background-size: cover;
+     padding-left: 280px;
+ }
+.container{
+    color:rgba(255,255,255,1);
+    width: 960px;
+    height: 761px;
+    /* border: solid 1px; */
+    
+}
+.container .headline{
+    font-family:'font-1';
+    font-size: 36px;
+    width: 560px;
+    height: 80px;
+    color: rgba(255,255,255,1);
+}
+@font-face {
+    font-family: 'font-2';
+    src: url(./font/Montserrat-Medium.ttf);
+}
+.container .headline1{
+    font-family: 'font-2';
+    font-size: 15px;
+    width: 540px;
+    height: 40;
+}
+@font-face {
+    font-family: 'font-3';
+    src: url(./font/OpenSans-ExtraBold.ttf);
+}
+.container .button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-family: 'font-3';
+    background-color: blue;
+    color:rgba(255,255,255,1);
+    display: block;
+    border: none;
+}
+.container .phone-heading{
+    margin-top: 60px;
+    margin-left: -17px;
+    float: left;
+}
+@font-face {
+    font-family: 'font-4';
+    src: url(./font/Montserrat-Medium.ttf);
+}
+.container .headline2{
+    float: right; 
+    margin-top: 172px;
+    margin-right: 70px;
+    font-size: 16px;
+    font-family: 'font-4'; 
+}
+.container .headline3{
+    float: right;
+    width: 430px;
+    height: 63px;
+    font-size: 12px;
+    margin-top: -13px;
+}
+.section-1{
+    background-color:rgba(240,240,240,0.99);
+    width: 1519px;
+    height: 476px;
+}
+.section-1 .img1{
+    margin-top: 89px;
+    margin-left: -374px;
+    width: 480px;
+    height: 298px;
+    float: left;
+}
+.section-1 .headline-section-1{
+    width: 500px;
+    height: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 115px;
+}
+.section-1 .headline-section-1 p{
+    font-family:'font-2';
+    font-size: 14px;
+}
+.section-2{
+   width: 1519px;
+   height: 747px;
+   background-color: rgba(255,255,255,5);
+   text-align: center;
+}
+.section-2 .line{
+    width: 80px;
+    margin-left: 717px;
+    margin-top: -3px;
+}
+.section-2 .item-section-2{
+    width: 476px;
+    height: 420px;
+    margin-left: 280px;
+    text-align: left;
+    font-family: font-2;
+    float: left;
+    margin-top: 37px;
+    
+
+}
+.section-2 .item1-section-2{
+    width: 500px;
+    height: 420px;
+    text-align: left;
+    font-family: font-2;
+    float: right;
+    margin-right: 220px;
+    margin-top: 37px;
+   
+}
+
