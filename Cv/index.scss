@@ -1,0 +1,398 @@
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+  @content;   
+ } 
+}  
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+   @content;   
+ } 
+}  
+
+@mixin desktop {   @media (min-width: #{$desktop-width}) {     
+  @content;  
+ } 
+}
+@font-face {
+    font-family: 'font-1';
+    src: url(./font/Montserrat-Light.ttf);
+}
+ * {
+    box-sizing: border-box;
+    font-family: 'font-1';
+  }
+  p{
+      font-family: sans-serif;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  [class*="col-"] {
+    float: left;
+    @include mobile(){
+        width: 100%;
+    }
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .container{
+    max-width: 90%;
+    width: 960px;
+    margin: 0 auto;
+}
+.heading{
+    background-image: url(./home2-event-box-1.jpg);
+    background-size: cover;
+    color: #fff;
+    padding-top: 25px;
+    @include mobile(){
+        text-align: center;
+    }
+    .logo{
+        text-align: left;
+        @include mobile(){
+            text-align: center;
+        }
+    }
+    .hotline{
+        text-align: right;
+        @include mobile(){
+            text-align: center;
+        }
+    }
+    .cd{
+        width: 52px;
+        height: 52px;
+        margin-top: 80px;
+    }
+    .heading-content{
+        width: 60%;
+        margin-bottom: 40px;
+        @include mobile(){
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .headline{
+            font-weight: bold;
+        }
+        .sub-headline{
+            font-size: 16px;
+        }
+        .button{
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            font-family: 'font-3';
+            background-color: blue;
+            color:rgba(255,255,255,1);
+            border: none; /* bo nut troi ra cua button*/
+            text-transform: uppercase; /* in hoa */
+        }
+    }
+    .project{
+        margin-top: 80px;
+        // @include mobile(){
+        //     margin-top: 145px;
+        //     margin-left: -171px;
+        // }
+        .headline2{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .headline3{
+            font-size: 12px;
+        }
+    }
+    .phone-heading{
+        margin: 0;
+        img{
+            width: 80%;
+        }
+    } 
+}
+.about-us{
+    background-color: #F5F5F5;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include mobile(){
+        margin-bottom: -75px;
+    }
+    .image-wrapper{
+        width: 100%;
+        overflow: hidden;
+        @include mobile(){
+            margin-top: -50px;
+        }
+        .about-us_img{
+            transform: scale(1.1);
+            transform: translate(-20px);
+            @include mobile(){
+                transform: none;
+                width: 100%;
+            }
+        }
+    }
+    .about-us_content{
+        margin-left: 40px;
+        @include mobile(){
+            text-align: center;
+        }
+        .about-us_title{
+            font-size: 30px;
+            font-weight: 700;
+        }
+         p{
+            font-size: 14px;
+        }
+       
+        .about-us_desciption{
+            color: #008ed6;
+        }
+    }   
+}
+.app-features{
+    background-color: #F8F8F8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include mobile(){
+        margin-bottom: -95px;
+    }
+    .app-features_wrapper{
+        text-align: center;
+        .app-features_title{
+            margin-top: 0;
+            @include mobile(){
+                margin-top: -50px;
+            }
+        }
+        // .line{
+        //     border: solid 1px blue;
+        // }
+        .app-features_desciption{
+            margin-bottom: 40px;
+        }
+    }
+    .design_wrapper{
+        width: 100%;
+        height: 430px;
+    }
+    .responsive-design_wrapprer{
+        padding-right: 20px;
+        font-size: 14px;
+        img{
+            width: 100%;
+            @include tablet(){
+                width: 100%;
+            }
+        }
+    }
+    .creative-design_wrapper{
+        padding-left: 20px;
+        font-size: 14px;
+        @include mobile(){
+            padding-left: 0;
+        }
+        img{
+            width: 100%;
+            @include tablet(){
+                width: 100%;
+            }
+        }
+    }
+}
+.at-work{
+    background-color: #F5F5F5;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    .at-work_content{
+        margin-top: 18px;
+        margin-right: 28px;
+        font-size: 14px;
+        @include mobile(){
+            margin-top: -109px;
+        }
+        .at-work_title{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .at-work_desciption{
+            color: #008ed6;
+        }
+    }
+    .at-work-image-wraper{
+        width: 100%;
+        /* margin-left: 17px; */
+        overflow: hidden;
+        .at-work_img{
+            transform: scale(1.1);
+            transform: translate(-63px);
+            /* height: 295px; */
+            @include mobile(){
+                width: 100%;
+                transform: none;
+            }
+        }
+    }
+}
+.logo-icon{
+    padding-top: 80px;
+    padding-bottom: 220px;
+    @include mobile(){
+        margin-top: -63px;
+    }
+    .logo-wrapper{
+        text-align: center;
+        font-size: 13px;
+        width: 217px;
+        height: 100px;
+        @include mobile(){
+            height: 230px;
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+    .logo1{
+        width: 100px;
+        height: 100px;
+    }
+    .h2{
+        font-weight: bold;
+    }
+
+}
+.our-app-features{
+    background-color: cornflowerblue;
+    // height: 700px;
+    @include mobile(){
+        margin-top: -204px;
+        padding-top: 20px;
+        
+    }
+    .picture{
+        width: 300px;
+        height: 500px;
+        img{
+           transform: translate(-245px);
+           @include mobile(){
+               transform: none;
+               width: 355px;
+               height: 219px;
+               margin-left: 34px;
+           }
+        }
+    }
+    .our-app-features_wrapper{
+        padding-top: 80px;
+        padding-left: 50px;
+        padding-right: 239px;
+        padding-bottom: 43px;
+        font-size: 14px;
+        color: white;
+        @include mobile(){
+            text-align: center;
+            width: 603px;
+            margin-top: -336px;
+        }
+        h2{
+            margin-top: 0;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .our-app-features_content{
+            padding-top: 25px;
+            .icon{
+                width: 66px;
+                height: 66px;
+            }
+            h4{
+                font-weight: bold;
+                font-size: 21;
+                margin-top: 10px;
+            }
+            p{
+                margin-top: -19px;
+                margin-bottom: 45px;
+            }
+        }
+      
+    }
+   
+}
+.hand-picked-designers{
+    .hand-picked-designers_wrapper{
+        padding-top: 80px;
+        padding-right: 10px;
+        font-size: 14px;
+        @include mobile(){
+            margin-top: -65px;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .projects{
+            color: cornflowerblue;
+            margin-top: 35px;
+            font-size: 16px;
+        }
+    }
+    .image_wrapper{
+        width: 680px;
+        height: 578px;
+        overflow: hidden;
+        img{
+            transform: translate(15px, -40px);
+            @include mobile(){
+                transform: none;
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+
+
+
+
