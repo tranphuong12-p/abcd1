@@ -244,13 +244,23 @@ $desktop-width: 1024px;
     background-color: #F5F5F5;
     padding-top: 100px;
     padding-bottom: 80px;
+    .mobile-show{
+        display: none;
+    }
+    .mobile-hide{
+        @include mobile(){
+            display: none;
+        }
+    }
+    .mobile-show{
+        @include mobile(){
+            display: block;
+        }
+    }
     .at-work_content{
         margin-top: 18px;
         margin-right: 28px;
         font-size: 14px;
-        @include mobile(){
-            margin-top: -109px;
-        }
         .at-work_title{
             font-size: 30px;
             font-weight: 700;
@@ -276,17 +286,17 @@ $desktop-width: 1024px;
 }
 .logo-icon{
     padding-top: 80px;
-    padding-bottom: 220px;
+    padding-bottom: 80px;
     @include mobile(){
-        margin-top: -63px;
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
     .logo-wrapper{
+        padding: 20px;
         text-align: center;
         font-size: 13px;
-        width: 217px;
-        height: 100px;
+        width: 100%x;
         @include mobile(){
-            height: 230px;
             width: 100%;
             padding-left: 80px;
             padding-right: 80px;
@@ -305,7 +315,6 @@ $desktop-width: 1024px;
     background-color: cornflowerblue;
     // height: 700px;
     @include mobile(){
-        margin-top: -204px;
         padding-top: 20px;
         
     }
@@ -324,14 +333,13 @@ $desktop-width: 1024px;
     }
     .our-app-features_wrapper{
         padding-top: 80px;
-        padding-left: 50px;
-        padding-right: 239px;
+        width: 70%;
         padding-bottom: 43px;
         font-size: 14px;
         color: white;
         @include mobile(){
             text-align: center;
-            width: 603px;
+            width: 100%;
             margin-top: -336px;
         }
         h2{
@@ -360,6 +368,7 @@ $desktop-width: 1024px;
    
 }
 .hand-picked-designers{
+    overflow: hidden;
     .hand-picked-designers_wrapper{
         padding-top: 80px;
         padding-right: 10px;
@@ -378,21 +387,149 @@ $desktop-width: 1024px;
         }
     }
     .image_wrapper{
-        width: 680px;
-        height: 578px;
-        overflow: hidden;
         img{
             transform: translate(15px, -40px);
             @include mobile(){
                 transform: none;
-                width: 500px;
-                height: 300px;
+                width: 100%;
             }
         }
     }
 }
-
-
-
+.main-features{
+    background-color: #F5F5F5;
+    padding-top: 65px;
+    padding-bottom: 70px;
+    text-align: center;
+    .headline_main-features{
+        padding-bottom: 15px;
+        h2{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    .img1_main-features{
+        width: 60px;
+        // height: 77px;
+    }
+   .content-wrapper{
+        width: 91%;
+        text-align: left;
+        font-size: 14px;
+        @include mobile(){
+            padding-left: 50px;
+        }
+        .col-3{
+            @include mobile(){
+                width: 70px;
+            }
+        }
+        .col-9{
+            @include mobile(){
+                width: 210px;
+            }
+        }
+        h3{
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 14px;
+        }
+        p{
+            color:#808080;
+        }
+   }
+}
+.quick-turnaround{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .quick-turnaround_wrapper{
+        text-align: center;
+        padding-bottom: 25px;
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    .content_wrapper{
+        text-align: center;
+        width: 95%;
+        @include mobile(){
+            margin-left: 14px;
+        }
+        img{
+            width: 94%;
+            @include mobile(){
+                width: 100%;
+            }
+        }
+        h4{
+            font-size: 21px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+.download-now{
+    background-image: url(./1500x640.jpg);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    // transform: scale(1.1);
+    // overflow: hidden;
+    .img1{
+        width: 10%;
+        @include mobile(){
+            width: 20%;
+        }
+    }
+    h1{
+        margin-top: 52px;
+        font-size: 36px;
+        color: #6495ED;
+        span{
+            color: white;
+        }
+    }
+    .button{
+        background-color: #6495ED;
+        color:white;
+        margin-top: 30px;
+        font-weight: bold;
+        height: 42px;
+        width: 15%;
+        border: none;
+        @include mobile(){
+            width: 37%;
+            
+        }
+    }
+}
+.our-latest-releases{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .headline_our-latest-releases{
+        text-align: center;
+        margin-bottom: 35px;
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    .img-wrapper{
+        // margin-bottom: 10px;
+        @include mobile(){
+            padding-left: 30px;
+            
+        }
+        img{
+            width: 90%;  
+            padding-bottom: 20px;  
+        }
+    }
+    
+}
 
 
