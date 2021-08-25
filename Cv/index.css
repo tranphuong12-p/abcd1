@@ -354,6 +354,10 @@ p {
     .quick-turnaround .quick-turnaround_wrapper h2 {
       font-size: 30px;
       font-weight: bold; }
+    .quick-turnaround .quick-turnaround_wrapper .line {
+      width: 100px;
+      border-bottom: solid 3px cornflowerblue;
+      margin: auto; }
   .quick-turnaround .content_wrapper {
     text-align: center;
     width: 95%; }
@@ -376,7 +380,10 @@ p {
   background-image: url(./1500x640.jpg);
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
   .download-now .img1 {
     width: 10%; }
     @media (max-width: 479px) {
@@ -409,11 +416,78 @@ p {
     .our-latest-releases .headline_our-latest-releases h2 {
       font-size: 30px;
       font-weight: bold; }
+    .our-latest-releases .headline_our-latest-releases .line {
+      width: 100px;
+      border-bottom: solid 3px cornflowerblue;
+      margin: auto; }
   @media (max-width: 479px) {
     .our-latest-releases .img-wrapper {
       padding-left: 30px; } }
   .our-latest-releases .img-wrapper img {
     width: 90%;
     padding-bottom: 20px; }
+
+.footer {
+  background-image: url(./footer-star-2.png);
+  background-color: #191970;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 55px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white; }
+  .footer .logo-ladipage {
+    width: 81%; }
+    .footer .logo-ladipage img {
+      width: 45%; }
+  .footer .lien-he_footer {
+    margin-left: -15px; }
+    .footer .lien-he_footer h4 {
+      font-size: 21px; }
+    .footer .lien-he_footer .menu ul {
+      list-style: none;
+      padding-left: 0; }
+  .footer .ket-noi_footer h4 {
+    font-size: 21px; }
+  .footer .ket-noi_footer .contant-wrapper {
+    background-color: white; }
+    .footer .ket-noi_footer .contant-wrapper .img_contant-wrapper {
+      border: 1px solid #000;
+      margin-top: 10px;
+      margin-left: 10px; }
+    .footer .ket-noi_footer .contant-wrapper .ladingpage_contant-wrapper {
+      padding-left: 65px;
+      margin-top: -49px;
+      margin-bottom: 35px;
+      font-size: 18px;
+      color: cornflowerblue; }
+    .footer .ket-noi_footer .contant-wrapper button {
+      margin-left: 65px;
+      margin-top: -29px; }
+    .footer .ket-noi_footer .contant-wrapper .line {
+      width: 100%;
+      border-bottom: 1px solid #9b9994;
+      margin-bottom: 30px;
+      margin-bottom: 17px;
+      margin-top: 7px; }
+    .footer .ket-noi_footer .contant-wrapper textarea {
+      width: 90%;
+      margin-bottom: 15px;
+      margin-left: 14px; }
+    .footer .ket-noi_footer .contant-wrapper .fa-facebook-messenger {
+      color: black;
+      margin-left: 15px; }
+    .footer .ket-noi_footer .contant-wrapper .messenger {
+      width: 74%;
+      margin-left: 35px;
+      margin-top: -14px;
+      margin-bottom: 12px;
+      color: darkgrey; }
+    .footer .ket-noi_footer .contant-wrapper .summit p {
+      color: darkgrey;
+      margin-left: 14px; }
+    .footer .ket-noi_footer .contant-wrapper .summit button {
+      margin-left: 265px; }
 
 /*# sourceMappingURL=index.css.map */
